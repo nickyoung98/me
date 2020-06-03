@@ -2,5 +2,5 @@
 
 TODO: write a python script that first prints "Hello world!"
 
-Print ("Hello world!")
-
+print("hello world!")
+python ../course/week1/tests.py
