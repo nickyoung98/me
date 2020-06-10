@@ -15,7 +15,7 @@ some_words = ['what', 'does', 'this', 'line', 'do', '?']
 
 for word in some_words:
     print(word)
-
+ 
 for x in some_words:
     print(x)
 
