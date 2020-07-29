@@ -5,14 +5,20 @@ Modify each function until the tests pass.
 """
 
 
-def loop_ranger(start, stop=None, step=1):
+def loop_ranger(start, stop, step):
     """Return a list of numbers between start and stop in steps of step.
 
     Do this using any method apart from JUST using range()
     The look up the docs for range(), you can answer this with just the range 
     function, but we'd like you to do it the long way, probably using a loop.
     """
-    return None
+    x= start
+    list= []
+    while x < stop:
+        list.append(x)
+        x= x + step
+    print(list)
+    return list
 
 
 def lone_ranger(start, stop, step):
@@ -20,7 +26,13 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    return None
+    list= []
+    while start < stop:
+        list.append(start)
+        start= start + step
+    print(list)
+
+    return list
 
 
 def two_step_ranger(start, stop):
@@ -29,9 +41,11 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    return None
-
-
+    list= []
+    for i in range(start, stop, 2):
+        list.append(i)
+    return list
+    
 def stubborn_asker(low, high):
     """Ask for a number between low and high until actually given one.
 
@@ -40,7 +54,21 @@ def stubborn_asker(low, high):
 
     Look up the docs for input
     """
-    return None
+    x= int(input("enter a number"))
+    while not(low < x < high):
+        if x < low:
+            print("Number is too low")
+        elif x > high:
+            print("Number is too high")
+        elif x > low and x < high:
+            print("Number is correct")
+            return x
+        x= int(input("enter a number: "))
+    print(x)
+    return x
+ 
+    
+   
 
 
 def not_number_rejector(message):
@@ -50,6 +78,16 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
+   number_only = False
+   while number only == False:
+       give_me = input("enter a number: ")
+       try:
+            give_me_number_only = int(give_me_number_only)
+            print (str(give_me_number_only) + "is an integer!")
+            return give_me_number_only
+        except Exception as e:
+                print ((give_me) + "is an integer!"
+
     return None
 
 
